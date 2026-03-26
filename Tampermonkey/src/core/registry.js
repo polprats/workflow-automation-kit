@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+    console.log('[TM Modular] carregant registry.js');
+
     window.TM = window.TM || {};
     window.TM.Modules = window.TM.Modules || [];
 
@@ -51,4 +53,6 @@
             });
         }
     };
+
+    console.log('[TM Modular] registry.js carregat correctament');
 })();
