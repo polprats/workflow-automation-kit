@@ -1,1 +1,1 @@
-// pedralbes-quick-grading-status.js
+// quick-grading-status.js
