@@ -6,7 +6,7 @@
 
     window.TM.Registry = {
         getCurrentPlatform() {
-            const Logger = window.TM.Logger;
+            const Logger = window.TM.Logger || console;
             const Platforms = window.TM.Platforms || {};
 
             const allPlatforms = Object.values(Platforms);
@@ -21,8 +21,13 @@
         },
 
         getAvailableModules(currentPlatform) {
-            const Logger = window.TM.Logger;
+            const Logger = window.TM.Logger || console;
             const modules = window.TM.Modules || [];
+
+            if (!currentPlatform) {
+                Logger.warn('No hi ha plataforma actual. No es poden filtrar mòduls.');
+                return [];
+            }
 
             return modules.filter(module => {
                 try {
