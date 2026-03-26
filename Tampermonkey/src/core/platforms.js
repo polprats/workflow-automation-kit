@@ -4,18 +4,18 @@
     window.TM = window.TM || {};
 
     window.TM.Platforms = {
-        campusExample: {
-            id: 'campus-example',
-            label: 'Campus Example',
+        pedralbes: {
+            id: 'pedralbes',
+            label: 'Institut Pedralbes',
             matchesHost() {
-                return window.location.hostname === 'example-campus.invalid';
+                return window.location.hostname === 'campus.institutpedralbes.cat';
             }
         },
-        iocExample: {
-            id: 'ioc-example',
-            label: 'IOC Example',
+        ioc: {
+            id: 'ioc',
+            label: 'IOC',
             matchesHost() {
-                return window.location.hostname === 'example-ioc.invalid';
+                return window.location.hostname === 'ioc.xtec.cat';
             }
         }
     };
