@@ -7,7 +7,7 @@
     window.TM.Registry = {
         getCurrentPlatform() {
             const Logger = window.TM.Logger;
-            const Platforms = window.TM.Platforms;
+            const Platforms = window.TM.Platforms || {};
 
             const allPlatforms = Object.values(Platforms);
             return allPlatforms.find(platform => {
